@@ -7,12 +7,18 @@
 </head>
 <body>
   <h1><a href="index2.html">글쓰기</a></h1>
-<div id="grid">
-    <ol>
+  <input type="button" value="night" onclick="
+  document.querySelector('body').style.backgroundColor = 'black';
+  document.querySelector('body').style.color = 'white';">
+  <input type="button" value="day" onclick="
+  document.querySelector('body').style.backgroundColor = 'white';
+  document.querySelector('body').style.color = 'black';">
+<div>
+    <ol style>
       <li><a href="A.html">문학 작품</a></li>
       <li><a href="B.html">비문학 작품</a></li>
     </ol>
-  <div id="article">
+  <div>
     <h2>문학 작품</h2>
     <p>
       <strong>시, 소설, 희곡, 수필</strong> 등이 포함
