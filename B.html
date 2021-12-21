@@ -7,11 +7,19 @@
 </head>
 <body>
   <h1><a href="index2.html">글쓰기</a></h1>
-  <input type="button" value="shift">
-  <if onclick="document.querySelector('body').style.backgroundColor='black';
-  document.querySelector('body').style.color='white';">
-  <else onclick="document.querySelector('body').style.backgroundColor='white';
-  document.querySelector('body').style.color='black';">
+  <input type="button" value="shift" onclick="
+  if(document.querySelector('body').dataset.mode ==='day'){
+    document.querySelector('body').style.backgroundColor='black'
+    document.querySelector('body').style.color='white';
+    document.querySelector('body').dataset.mode = 'night';
+    this.value = 'day';
+  }else {
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    document.querySelector('body').dataset.mode = 'day';
+    this.value = 'night';
+  }
+">
 <div id="grid">
     <ol>
       <li><a href="A.html">문학 작품</a></li>
